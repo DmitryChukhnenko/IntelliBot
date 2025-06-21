@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# 
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntelliBot.Core", "IntelliBot.Core\IntelliBot.Core.csproj", "{2F7265FB-CFFC-45BC-9532-06021BE3040C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntelliBot.WebApp", "IntelliBot.WebApp\IntelliBot.WebApp.csproj", "{6F2F3C39-75F4-4174-BA3F-70D60BA24B9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F7265FB-CFFC-45BC-9532-06021BE3040C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F7265FB-CFFC-45BC-9532-06021BE3040C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F7265FB-CFFC-45BC-9532-06021BE3040C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F7265FB-CFFC-45BC-9532-06021BE3040C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F2F3C39-75F4-4174-BA3F-70D60BA24B9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F2F3C39-75F4-4174-BA3F-70D60BA24B9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F2F3C39-75F4-4174-BA3F-70D60BA24B9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F2F3C39-75F4-4174-BA3F-70D60BA24B9F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
