@@ -1,8 +1,8 @@
 version: '3.8'
 
 services:
-  intellibot-core:
-    build: ./IntelliBot.Core
+  backend:
+    build: ./backend
     container_name: intellibot-core
     env_file: ./.env
     ports:
@@ -11,18 +11,19 @@ services:
       test: ["CMD", "curl", "-f", "http://localhost:80/health"]
       interval: 5s
       timeout: 3s
-      retries: 20 
+      retries: 20
+      start_period: 30s
 
-  intellibot-webapp:
-    build: ./IntelliBot.WebApp
+  frontend:
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
     container_name: intellibot-webapp
     env_file: ./.env
-    environment:
-      - API_ENDPOINT=http://intellibot-core/api/cognition
     ports:
-      - "5051:80"
-    volumes:
-      - webapp-keys:/app/keys
+      - "5051:3000"
+    restart: unless-stopped
 
-volumes:
-  webapp-keys:
+networks:
+  default:
+    driver: bridge

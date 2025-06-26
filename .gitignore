@@ -3,4 +3,8 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
+.vscode/
 .env
+.next/
+node_modules/
+package-lock.json
