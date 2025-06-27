@@ -38,6 +38,8 @@ public class OpenrouterAssistantService : IAssistantService
 
     public async Task<string> ProcessConversation(string sessionId, string userMessage)
     {
+        CleanupExpiredConversations();
+
         var conversation = _conversations.GetOrAdd(sessionId, id => new Conversation
         {
             SessionId = id,

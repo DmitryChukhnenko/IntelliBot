@@ -19,6 +19,7 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddSingleton<IAssistantService, OpenrouterAssistantService>();
+builder.Services.AddHostedService<BackgroundCleanupService>();
 
 builder.Services.AddControllers();
 
