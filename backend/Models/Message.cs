@@ -4,12 +4,13 @@ public class Message
 {
     private string _role = "user";
 
+    private static readonly string[] sourceArray = ["system", "user", "assistant", "tool"];
     public string Role
     {
         get => _role;
         set
         {
-            if (new[] { "system", "user", "assistant", "tool" }.Contains(value.ToLower()))
+            if (sourceArray.Contains(value.ToLower()))
             {
                 _role = value.ToLower();
             }
